@@ -9,4 +9,9 @@ public abstract class Entity {
 		// TODO Auto-generated constructor stub
 	}
 
+	public void NewRound(){}
+	
+	public void TurnStart(){}
+	
+	public void TurnEnd(){}
 }

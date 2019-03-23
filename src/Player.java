@@ -11,7 +11,7 @@ public final class Player extends Holder{
 
 	public Player(Corporation corp) {
 		// TODO Auto-generated constructor stub
-		super(corp.money,corp.steel, corp.titanium,corp.plant,corp.energy,corp.heat);
+		super(corp.money, corp.steel, corp.titanium, corp.plant, corp.energy, corp.heat);
 		
 		this.TR=0;
 
@@ -26,11 +26,12 @@ public final class Player extends Holder{
 		this.TR+=amount;
 	}
 	
-	public void Update(){
+	public void NewRound(){
 		money.gain(getTR());//calculate money gain from TR separately
 		for (int i=0;i<resources.length;i++){
 			resources[i].gain(resources[i].getProduction());//if this is not the only place for a player to gain production then this should be absorbed into the resource class - C
 		}
 	}
+	
 	
 }

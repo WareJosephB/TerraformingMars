@@ -13,16 +13,7 @@ public class Resource {
 		this.prod=production;
 		this.val=value;
 	}
-	
-	public Resource(Corporation corp){
-		/*
-		 * For easy initialisation of Player class
-		 * Try not to initialise a Corporation object this way
-		 *
-		 */
-		
-		
-	}
+
 
 	public int getQuantity(){
 		return this.quant;

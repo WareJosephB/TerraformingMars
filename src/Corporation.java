@@ -1,17 +1,16 @@
+import java.awt.Color;
 
-public final class Corporation {
+public final class Corporation extends Card{
 
-	public Resource money;
-	public Resource steel;
-	public Resource titanium;
-	public Resource plant;
-	public Resource energy;
-	public Resource heat;
-	
+	private static Color corpColor;//Can't remember how card colors work this wont work till fixed, but using as a placeholder for now - C
 
-	
-	public Corporation() {
+
+	public Corporation(String name,int initialMoney,String tags,String description,
+					Resource money, Resource steel, Resource titanium, Resource plant, Resource energy, Resource heat){
 		// TODO Auto-generated constructor stub
+		super(name,corpColor,0,tags,description);
+		
+		
 		
 		
 	}

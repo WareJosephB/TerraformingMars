@@ -1,28 +1,21 @@
 
-public final class Player {
+public final class Player extends Holder{
 
 	
-	public Resource money;
-	public Resource steel;
-	public Resource titanium;
-	public Resource plant;
-	public Resource energy;
-	public Resource heat;
+
 	
-	private Resource[] resources;//to make handling resources inside class easier
+	//to make handling resources inside class easier
 	
 	private int TR; //terraforming rating
 	
 
 	public Player(Corporation corp) {
 		// TODO Auto-generated constructor stub
+		super(corp.money,corp.steel, corp.titanium,corp.plant,corp.energy,corp.heat);
+		
 		this.TR=0;
 
-		resources=new Resource[]{money,steel,titanium,plant,energy,heat};//worth double checking I'm using this right, its been a while -C
-		
-		for (int i=0;i<resources.length;i++){
-			resources[i]=new Resource(corp);
-		}
+
 	}
 
 	//get setters

@@ -1,17 +1,12 @@
 import java.awt.Color;
 
-public abstract class Card {
+public abstract class Card extends Holder{
 
 	/*
 	 * might be better to do further object wonderfullness with resources and productions to streamline this huge list of variables
 	 */
 	
-	private Resource money;
-	private Resource steel;
-	private Resource titanium;
-	private Resource plant;
-	private Resource energy;
-	private Resource heat;
+
 	
     private Color color;//better to keep with this spelling for consistency reasons - C
     private int price;

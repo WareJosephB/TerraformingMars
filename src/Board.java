@@ -28,16 +28,18 @@ public final class Board {
 			if (this.temp < this.tempMax) {
 				this.temp += 2;
 				player.TRchange(1);
-				if (this.temp == -24 || this.temp == -20) {// would be a good idea to make the milestones not hard coded
+				if (this.temp == -24 || this.temp == -20) {// would be a good idea to make the milestones not hard coded - C
 					
-					player.heatProdchange(1);
+					player.heat.productionChange(1);
 					
 				} else if (this.temp == 0) {
 
 					/*
 					not sure how best to implement giving player an ocean to place.
 					should decide on flow of game.
-					most likely need to implement method for player to place ocean before this can be implemented 
+					most likely need to implement method for player to place ocean before this can be implemented
+
+					- C
 					 */
 					 
 				}

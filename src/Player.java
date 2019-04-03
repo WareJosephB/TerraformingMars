@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public final class Player extends Holder{
 
-	
+	public static List<Entity> Players=null;
 
 	
 	//to make handling resources inside class easier
@@ -12,6 +14,10 @@ public final class Player extends Holder{
 	public Player(Corporation corp) {
 		// TODO Auto-generated constructor stub
 		super(corp.money, corp.steel, corp.titanium, corp.plant, corp.energy, corp.heat);
+		
+		if (entities == null) Players = new ArrayList<>();
+        Players.add(this);
+		
 		
 		this.TR=0;
 
